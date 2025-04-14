@@ -1,0 +1,48 @@
+body {
+  background-color: #f8f8f8;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+body.dark-mode header {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode .section {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+body.dark-mode a {
+  color: #aaa;
+}
+
+body.dark-mode a:hover {
+  color: #fff;
+}
+
+.dark-mode-toggle {
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #fff;
+  color: #333;
+}

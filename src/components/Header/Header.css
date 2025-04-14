@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(120deg, #dd60ed, #210225);
+  padding: 0.8rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.logo img {
+  height: 50px;
+  width: 80%;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: underline;
+  background-color: transparent;
+  color: #ffffff !important;
+  font-weight: bolder;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #a966ec;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  background-color: #ffffff !important;
+  padding: 5px;
+  border-radius: 15%;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  transition: all 0.3s;
+}
+
+.rotate-top {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.rotate-bottom {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.hide {
+  opacity: 0;
+}
+.dark-mode-toggle{
+  border-radius: 25%;
+}
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #9d4fecf1;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    width: 100%;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    display: none;
+  }
+
+  .nav-links:hover {
+    background-color: rgb(244, 17, 244);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Dark Mode Styles */
+body.dark-mode .header {
+  background: linear-gradient(120deg, #333, #111); 
+}
+
+body.dark-mode .nav-links a {
+  color: #ddd !important; 
+}
+
+body.dark-mode .nav-links a:hover {
+  color: #a966ec; 
+}
+
+body.dark-mode .hamburger {
+  background-color: #333 !important; 
+}
+
+body.dark-mode .bar {
+  background-color: #ddd;
+}
+
+body.dark-mode .nav-links {
+  background-color: #222; 
+}

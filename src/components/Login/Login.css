@@ -1,0 +1,86 @@
+.login-wrapper {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-heading {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 25px;
+  color: #0b69dd;
+}
+.dark-mode .login-heading{
+  color: white;
+}
+
+.login-message {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.login-message.success {
+  color: #2e7d32;
+}
+.login-message.error {
+  color: #c62828;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-input {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.login-input:focus {
+  border-color: #880e4f;
+  outline: none;
+}
+
+.login-btn {
+  padding: 12px;
+  background-color: #326cf3;
+  color: white;
+  font-size: 16px;
+  font-weight: bolder;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.login-link{
+font-weight: bolder;
+font-size: 18px;
+}
+.dark-mode .login-btn{
+  background: linear-gradient(120deg, rgb(61, 125, 235), rgb(245, 245, 244));
+  color: black;
+  font-weight: bolder;
+}
+.login-btn:hover {
+  background-color: #560027;
+}
+
+.dark-mode .login-card{
+  background:linear-gradient(120deg, rgb(161, 158, 158) , rgb(44, 43, 43));
+}

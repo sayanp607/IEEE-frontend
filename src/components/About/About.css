@@ -1,0 +1,115 @@
+.about-wrapper {
+  background-color: #a966ecf1;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-box {
+  background-color: rgb(198, 119, 237);
+  color: #333;  
+  max-width: 900px;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 16px 40px rgb(0, 0, 0); 
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+  font-weight: bold;
+}
+
+.about-box:hover {
+  box-shadow: 0 16px 40px rgb(255, 255, 255); 
+  transform: scale(1.05);
+}
+
+.about-box .text {
+  text-align: center;
+  text-decoration: underline;
+  color: black;
+}
+
+/* Dark Mode Styles */
+body.dark-mode .about-wrapper {
+  background-color: #3a3a3a; 
+}
+
+body.dark-mode .about-box {
+  background-color: #2e2e2e; 
+  color: #fff; 
+  box-shadow: 0 16px 40px rgba(255, 255, 255, 0.1); 
+}
+
+body.dark-mode .about-box:hover {
+  box-shadow: 0 16px 40px rgba(255, 255, 255, 0.2); 
+  transform: scale(1.05);
+}
+
+body.dark-mode .about-box .text {
+  color: #ddd;
+}
+
+
+body.dark-mode a {
+  color: #aaa;
+}
+
+body.dark-mode a:hover {
+  color: #fff;
+}
+
+
+.register-show {
+  margin-top: 3rem;
+  background: linear-gradient(90deg, #e447df, #d9cadc);
+  color: #000;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 40px 40px rgb(0, 0, 0) !important;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+.register-show h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.register-show p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.register-button {
+  background-color: #000;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-button:hover {
+  background-color: #444;
+}
+/* register card dark mode styles*/
+body.dark-mode .register-show {
+  background: linear-gradient(60deg, rgb(13, 13, 0) , rgb(255, 255, 255));
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .register-button {
+  background-color: #fff;
+  color: #000;
+}
+
+body.dark-mode .register-button:hover {
+  background-color: #ccc;
+}

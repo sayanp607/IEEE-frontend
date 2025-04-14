@@ -1,0 +1,86 @@
+.footer {
+  background: linear-gradient(120deg, #dd60ed, #210225);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 1rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #030006;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #a966ec;
+}
+
+.footer-section p {
+  margin: 0.3rem 0;
+}
+
+.footer-section.about p {
+  line-height: 1.5;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.3rem 0;
+  color: white;
+  font-weight: 500;
+}
+
+.social-link svg {
+  font-size: 1.2rem;
+}
+
+/* Dark Mode Styles */
+body.dark-mode .footer {
+  background: linear-gradient(120deg, #333, #111); 
+}
+
+body.dark-mode .footer-section h3 {
+  color: #fff;
+}
+
+body.dark-mode .footer-section a {
+  color: #ddd; 
+}
+
+body.dark-mode .footer-section a:hover {
+  color: #a966ec; 
+}
+
+body.dark-mode .footer-section p {
+  color: #ddd; 
+}
+
+body.dark-mode .social-link {
+  color: #ddd; 
+}
+
+body.dark-mode .social-link svg {
+  color: #ddd; 
+}
+
+body.dark-mode .social-link svg:hover {
+  color: #a966ec; 
+}
