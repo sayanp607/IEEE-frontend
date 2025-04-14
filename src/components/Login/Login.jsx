@@ -18,7 +18,7 @@ const Login = () => {
 
     try {
       const res = await axios.post(
-        "https://ieee-server-gq7r.onrender.com/api/auth/login",
+        "https://ieee-backend-gucf.onrender.com/api/auth/login",
         formData
       );
       localStorage.setItem("token", res.data.token);
