@@ -6,11 +6,11 @@ import { useNavigate } from "react-router-dom";
 const AttendanceQR = () => {
   const [count, setCount] = useState(0);
   const navigate = useNavigate();
-  const url = "http://192.168.43.1:5000/scan";
+  const url = "https://ieee-backend-gucf.onrender.com/scan";
 
   useEffect(() => {
     const fetchCount = async () => {
-      const res = await axios.get("http://localhost:5000/count");
+      const res = await axios.get("https://ieee-backend-gucf.onrender.com/count");
       setCount(res.data.count);
     };
     fetchCount();
