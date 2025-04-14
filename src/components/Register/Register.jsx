@@ -25,7 +25,7 @@ const Register = () => {
 
     try {
       const res = await axios.post(
-        "https://ieee-backend-gucf.onrender.com/api/auth/register",
+        "https://ieee-backend-8pft.onrender.com/api/auth/register",
         formData
       );
       localStorage.setItem("token", res.data.token);
