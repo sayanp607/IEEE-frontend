@@ -21,7 +21,7 @@ This project is made for user to view the upcoming events of JUSB and register t
 ### **1️⃣ Clone the Repository**
 ```sh
 git clone https://github.com/sayanp607/IEEE-frontend.git
-cd frontend
+cd  IEEE-frontend
 ```
 
 ### **2️⃣ Install Dependencies**
