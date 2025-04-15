@@ -1,12 +1,38 @@
-# React + Vite
+ # IEEE JUSB
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🌍 About the Project
+This project is made for user to view the upcoming events of JUSB and register themselves, mark attendance by scanning a QR!
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## ✨ Features
+- Toggle dark and light mode
+- Search speakers by name or role (using search filter)
+- Greeting card display according to timing
+- Horizontal scrolling in tracks
+- User-friendly interface with responsive design
+- Scroll to top button for better user experience
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+<!--line-->
+ 
+## 🚀 Getting Started
+
+### **1️⃣ Clone the Repository**
+```sh
+git clone https://github.com/sayanp607/IEEE-frontend.git
+cd frontend
+```
+
+### **2️⃣ Install Dependencies**
+```sh
+npm install
+```
+
+### **3️⃣ Run the Project**
+```sh
+npm run dev
+```
+
+Now, visit `http://localhost:5173` to see the project in action! 🎉
+
